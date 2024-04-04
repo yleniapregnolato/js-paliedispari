@@ -38,17 +38,17 @@ function rndInteger (min, max) {
 /**
  * Description
  * @param {string} winnerCheck
- * @returns {boolean} se true vince l'utente, altrimenti vince il computer
+ * @returns {stringa} se i volori sono uguali vince l'utente, altrimenti vince il computer
  */
 function gameWinner (winnerCheck) {
-    let result = false;
-    if (isEven && userEvenOdd === "pari") {
+    let result;
+    if (isEven === true && userEvenOdd === "pari") {
         result = true;
-        console.log("complimenti user, hai vinto");
+        console.log("complimenti user, hai vinto", result);
     } else {
         result = false;
-        console.log("mi dispiace, non hai vinto");
+        console.log("mi dispiace non hai vinto");
     }
 
-    return result
+    return result;
 }
