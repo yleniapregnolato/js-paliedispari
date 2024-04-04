@@ -3,10 +3,10 @@
 /**
  * Description la funzione verifica se il risultato ottenuto è  un numero pari
  * @param {number} numberCheck
- * @returns {booleano} true se è pari, altrimenti false
+ * @returns {boolean} true se è pari, altrimenti false
  */
 function isEven(numberCheck) {
-    let result; // boolena
+    let result; // boolean
     if (numberCheck % 2 === 0) {
         result = true
         console.log("numero pari");
@@ -21,12 +21,34 @@ function isEven(numberCheck) {
 // definisco una funzione per generare un numero random
 /**
  * Description
- * @param {number} 1 valore minimo 
- * @param {numeber} 5 valore massimo 
+ * @param {number} min 1 valore minimo 
+ * @param {numeber} max  5 valore massimo 
  * @returns {number} numero generato tra 1 e 5
  */
-function rndInteger () {
+function rndInteger (min, max) {
     const rdnNumber = Math.floor(Math.random() * 5 ) + 1;
 
     return rdnNumber;
+}
+
+// definisco una funzione per dichiarare chi ha vinto
+    // se la somma rispecchia la scelta dell'utente avrà vinto lui
+    // altrimenti avrà vinto il computer
+
+/**
+ * Description
+ * @param {string} winnerCheck
+ * @returns {boolean} se true vince l'utente, altrimenti vince il computer
+ */
+function gameWinner (winnerCheck) {
+    let result = false;
+    if (isEven && userEvenOdd === "pari") {
+        result = true;
+        console.log("complimenti user, hai vinto");
+    } else {
+        result = false;
+        console.log("mi dispiace, non hai vinto");
+    }
+
+    return result
 }
